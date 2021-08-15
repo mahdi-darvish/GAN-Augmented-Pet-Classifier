@@ -1,1 +1,1 @@
-# GANs-augmented-pet-classifierrrr
+# GANs-augmented-pet-classifier
