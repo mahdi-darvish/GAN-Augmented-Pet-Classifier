@@ -10,29 +10,25 @@ Abstract: _Fine-grained   classification   remains   a   challengingtask  becaus
 
 # Results
 
-
-the evaluated RMSE of the trained MobileNetV2 model with
-and without landmark normalization:
-
-<div style="text-align:center"><img src="Figures/RMSE.PNG" /></div>
-
-
 The measured accuracy of the used model and FID for three different dataset conditions (Original, augmented, and augmented-cropped) in data regimes of 10, 50, and 100 percent:
 
 <div style="text-align:center"><img src="Figures/FID.PNG" /></div>
-
-
+<br>
 Comparison between synthetic and authentic images. This figure show (a) the original data,(b) and (c) generated images on
 the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50%, (e) uncropped images generated on 50%
 subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
 visualizations prove the effectiveness and the interpretability of the method.
 
 <div style="text-align:center"><img src="Figures/result's pic.PNG" /></div>
-
-
-Finally, the charts explain the accuracy of the used model and FID for three different dataset conditions (Original, augmented, and cropped-augmented ) in data regimes of 10, 50, and 100 percent:
+<br>
+The charts explain the accuracy of the used model and FID for three different dataset conditions (Original, augmented, and cropped-augmented ) in data regimes of 10, 50, and 100 percent:
 
 <div style="text-align:center"><img src="Figures/charts.PNG" /></div>
+<br>
+The evaluated RMSE of the trained MobileNetV2 model with
+and without landmark normalization:
+
+<div style="text-align:center"><img src="Figures/RMSE.PNG" /></div>
 
 # Pre-Trained Models
 
