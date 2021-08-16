@@ -10,10 +10,58 @@ Abstract: *Fine-grained   classification   remains   a   challengingtask  becaus
 
 # Results
 
+the evaluated RMSE of the trained MobileNetV2 model with
+and without landmark normalization:
+
+<div style="text-align:center"><img src="Figures/RMSE.PNG" /></div>
+
+The measured accuracy of the used model and FID for three different dataset conditions (Original, augmented, and augmented-cropped) in data regimes of 10, 50, and 100 percent:
+
+<div style="text-align:center"><img src="Figures/FID.PNG" /></div>
+
+Comparison between synthetic and authentic images. This figure show (a) the original data,(b) and (c) generated images on
+the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50%, (e) uncropped images generated on 50%
+subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
+visualizations prove the effectiveness and the interpretability of the method.
+
+<div style="text-align:center"><img src="Figures/result's pic.PNG" /></div>
+
+Finally, the charts explain the accuracy of the used model and FID for three different dataset conditions (Original, augmented, and cropped-augmented ) in data regimes of 10, 50, and 100 percent:
+
+<div style="text-align:center"><img src="Figures/charts.PNG" /></div>
 
 # Pre-Trained Models
+
+### StyleGAN2-ADA trained on cropped pets dataset 
+
+
+
+| Subset | Kimg | FID  | Acc on Vit | Model link | TFRecords |
+|--------|------|------|------------|------------|-----------|
+| 10%    | 5120 | 49.4 | 68.55      | 250 Mb     |           |
+| 50%    | 5120 | 22.3 | 91.73      | 250 Mb     |           |
+| 100%   | 5120 | 14.1 | 96.28      | 250 Mb     |           |
+
+
+### StyleGAN2-ADA trained on not cropped pets dataset 
+
+| Subset | Kimg | FID  | Acc on Vit | Model link | TFRecords |
+|--------|------|------|------------|------------|-----------|
+| 10%    | 5120 | 71.1 | 63.32      | 250 Mb     |           |
+| 50%    | 5120 | 36.4 | 88.70      | 250 Mb     |           |
+| 100%   | 5120 | 20.7 | 94.93      | 250 Mb     |           |
+
 # Getting started
 ## Dataset
+
+The official dataset can be reached from:
+
+[Oxford-IIIT Pet dataset.](https://www.robots.ox.ac.uk/~vgg/data/pets/)
+
+The cropped dataset iis given in:
+
+[GDRIVE.](https://drive.google.com/drive/u/7/my-drive)
+
 ## StyleGAN2-ADA Installation
 ### Running Localy
 #### Data Preperation
