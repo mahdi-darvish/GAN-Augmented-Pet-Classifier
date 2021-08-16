@@ -57,9 +57,8 @@ and without landmark normalization:
 The official dataset can be reached from:
 
 [Oxford-IIIT Pet dataset.](https://www.robots.ox.ac.uk/~vgg/data/pets/)
-
-
-The cropped dataset iis given in:
+<br>
+The cropped dataset is given in:
 
 [GDRIVE.](https://drive.google.com/drive/u/7/my-drive)
 ## StyleGAN2-ADA Installation
