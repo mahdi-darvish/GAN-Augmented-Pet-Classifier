@@ -1,8 +1,8 @@
 # GANs Augmented Pet Classifier
-<div style="text-align:center"><img src="Figures/training_sequence.gif" /></div>
+<div style="text-align:center"><img src="figures/training_sequence.gif" /></div>
 
-##### Towards Fine-grained Image Classification withGenerative Adversarial Networks and FacialLandmark Detection
-__Mahdi Darvish, Mahsa Pouramini, Hamid Bahador__
+### Towards Fine-grained Image Classification with Generative Adversarial Networks and Facial Landmark Detection
+_Mahdi Darvish, Mahsa Pouramini, Hamid Bahador_
 
 arixv ;llinkkk
 
@@ -12,26 +12,26 @@ Abstract: _Fine-grained   classification   remains   a   challengingtask  becaus
 
 The measured accuracy of the used model and FID for three different dataset conditions (Original, augmented, and augmented-cropped) in data regimes of 10, 50, and 100 percent:
 
-<div style="text-align:center"><img src="Figures/FID.PNG" /></div>
+<div style="text-align:center"><img src="figures/FID.PNG" /></div>
 <br>
 <br>
 Comparison between synthetic and authentic images. This figure show (a) the original data,(b) and (c) generated images on
 the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50%, (e) uncropped images generated on 50%
 subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
-visualizations prove the effectiveness and the interpretability of the method.
+visualizations prove the effectiveness and the interpretability of the method.<br>
 
-<div style="text-align:center"><img src="Figures/result's pic.PNG" /></div>
+<div style="text-align:center"><img src="figures/result's pic.PNG" /></div>
 <br>
 <br>
 The charts explain the accuracy of the used model and FID for three different dataset conditions (Original, augmented, and cropped-augmented ) in data regimes of 10, 50, and 100 percent:
 
-<div style="text-align:center"><img src="Figures/charts.PNG" /></div>
+<div style="text-align:center"><img src="figures/charts.PNG" /></div>
 <br>
 <br>
 The evaluated RMSE of the trained MobileNetV2 model with
 and without landmark normalization:
 
-<div style="text-align:center"><img src="Figures/RMSE.PNG" /></div>
+<div style="text-align:center"><img src="figures/RMSE.PNG" /></div>
 
 # Pre-Trained Models
 
@@ -57,22 +57,30 @@ and without landmark normalization:
 # Getting started
 ## Dataset
 
+#### Oxford-IIIT Pets Variants:
 The official dataset can be reached from:
-
-[Oxford-IIIT Pet dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/)
 <br>
-<br>
-The cropped dataset is given in:
 
-[GDRIVE](https://drive.google.com/drive/u/7/my-drive)
+- [Original dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/)
+- [Cropped Version](https://drive.google.com/drive/u/7/my-drive)
+
+#### Landmark prediction datasets:
+
+We combined the following datasets for predicting landmarks:
+
+- [Cat dataset from Kaggle](https://www.kaggle.com/crawford/cat-dataset) 
+- [Dog dataset from DogFaceNet](https://github.com/GuillaumeMougeot/DogFaceNet/releases/).
 
 ## StyleGAN2-ADA Installation
 ### Running Localy
 Requirements for running StyleGAN localy are consist of:
 - 64-bit Python 3.7.
-    - Pytorch and dependencies :
+- Pytorch and dependencies :
+
     !pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-    - Python libraries:
+
+- Python libraries:
+
     !pip install ninja tqdm ffmpeg
 
 #### Data Preperation
@@ -124,10 +132,29 @@ To generate synthetic images run the code below with your custom .pkl file and s
  ### Running through Google Colab
  We provided notebooks for running the GANs model directly through google colab:
  
- - [Original Oxford-IIIT Pets](https://github.com/mahdi-darvish/GAN-augmented-pet-classifier/blob/main/Colab%20Notbooks/colab_gan_train.ipynb)
- - [Cropped Oxford-IIIT Pets]()
+ - [Original Oxford-IIIT Pets](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/blob/main/colab%20notebooks/colab_not-cropped.ipynb)
+ - [Cropped Oxford-IIIT Pets](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/blob/main/colab%20notebooks/colab_cropped.ipynb)
  
 ## Landmark Detection
+### Requirements
+ - 64-bit Python 3.7
+ - python libraries:
+    
+    !pip install Pillow==5.4.1 tqdm keras cv2
+    
+### Training
+To train the model with custom dataset, the default directory is `pet`'s parent dataset, you can modify it by changing `train.py` script. The annotations should be same as the [Cat-dataset](https://www.kaggle.com/crawford/cat-dataset).
+    
+    !python train.py --loss_fn iou --flip_horizontal --crop_scale_balanced --rotate_n 20 --ReduceLROnPlateau_factor 0.8 --ReduceLROnPlateau_patience 10
+
+Trained models will be placed in: `landmark_detection/tools/models`
+    
+### Prediction
+
+Run the following code with the image path, output image will be saved at the same path:
+
+    !python final_predictor.py --img_path *insert image path here* --landmarks_model_path= *inside tools/models as default*
+
 # Citation
 
 # Acknowledgement
