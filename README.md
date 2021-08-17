@@ -58,18 +58,22 @@ and without landmark normalization:
 ## Dataset
 
 The official dataset can be reached from:
-[Oxford-IIIT](https://www.robots.ox.ac.uk/~vgg/data/pets/) Pet dataset
+
+[Oxford-IIIT Pet dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/)
 <br>
 <br>
 The cropped dataset is given in:
+
 [GDRIVE](https://drive.google.com/drive/u/7/my-drive)
 
 ## StyleGAN2-ADA Installation
 ### Running Localy
 Requirements for running StyleGAN localy are consist of:
 - 64-bit Python 3.7.
-    - Pytorch and dependencies : !pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-    - Python libraries: !pip install ninja tqdm ffmpeg
+    - Pytorch and dependencies :
+    !pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+    - Python libraries:
+    !pip install ninja tqdm ffmpeg
 
 #### Data Preperation
 Please prepare the data as following:
