@@ -39,20 +39,20 @@ and without landmark normalization:
 ### StyleGAN2-ADA trained on cropped pets dataset 
 
 
-| Subset | Kimg | FID  | Acc on Vit | Model link | TFRecords |
-|--------|------|------|------------|------------|-----------|
-| 10%    | 5120 | 49.4 | 68.55      | 250 Mb     |           |
-| 50%    | 5120 | 22.3 | 91.73      | 250 Mb     |           |
-| 100%   | 5120 | 14.1 | 96.28      | 250 Mb     |           |
+| Subset | Kimg | FID  | Acc on Vit | Pre-trained Model |
+|--------|------|------|------------|-------------------|
+| 10%    | 5120 | 49.4 | 68.55      | [266.7 Mb](https://drive.google.com/file/d/1LnzWRR-WOP61yrAA-Pjx8zHZuW-_XTvv/view?usp=sharing)          |    
+| 50%    | 5120 | 22.3 | 91.73      | [266.7 Mb](https://drive.google.com/file/d/1HE1PKRbLt4D92YVX_wMgAVFDaW5ekf2i/view?usp=sharing)          |           
+| 100%   | 5120 | 14.1 | 96.28      | [266.6 Mb](https://drive.google.com/file/d/16rMCYKYOEnlUU0y_5A0vSvfp5SbEnym-/view?usp=sharing)          |           
 
 
 ### StyleGAN2-ADA trained on not cropped pets dataset 
 
-| Subset | Kimg | FID  | Acc on Vit | Model link | TFRecords |
-|--------|------|------|------------|------------|-----------|
-| 10%    | 5120 | 71.1 | 63.32      | 250 Mb     |           |
-| 50%    | 5120 | 36.4 | 88.70      | 250 Mb     |           |
-| 100%   | 5120 | 20.7 | 94.93      | 250 Mb     |           |
+| Subset | Kimg | FID  | Acc on Vit | Pre-trained Model| 
+|--------|------|------|------------|------------------|
+| 10%    | 5120 | 71.1 | 63.32      | [266.7 Mb](https://drive.google.com/file/d/17UtNRouNT7OEXZqhAReWzxF94muO5Q5z/view?usp=sharing)         |           
+| 50%    | 5120 | 36.4 | 88.70      | [266.7 Mb](https://drive.google.com/file/d/1VxXw66_37Q8WM93bORkvTzMY_cNmR1Na/view?usp=sharing)         |           
+| 100%   | 5120 | 20.7 | 94.93      | [266.7 Mb](https://drive.google.com/file/d/1faWOraVyYiYalN7Y0lGJ7mOJx2eE3zZu/view?usp=sharing)         |           
 
 # Getting started
 ## Dataset
