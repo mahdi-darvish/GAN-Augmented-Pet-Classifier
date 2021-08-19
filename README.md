@@ -4,7 +4,7 @@
 ### Towards Fine-grained Image Classification with Generative Adversarial Networks and Facial Landmark Detection
 _Mahdi Darvish, Mahsa Pouramini, Hamid Bahador_
 
-arixv ;llinkkk
+arixv :llinkkk
 
 Abstract: _Fine-grained   classification   remains   a   challengingtask  because  distinguishing  categories  needs  learning  complexand  local  differences.  Diversity  in  the  pose,  scale,  and  positionof  objects  in  an  image  makes  the  problem  even  more  difficult.Although  the  recent  Vision  Transformer  models  achieve  highperformance,  they  need  an  extensive  volume  of  input  data.  Toencounter this problem, we made the best use of GAN-based dataaugmentation  to  generate  extra  dataset  instances.  Oxford-IIITPets  was  our  dataset  of  choice  for  this  experiment.  It  consistsof  37  breeds  of  cats  and  dogs  with  variations  in  scale,  poses,and  lighting,  which  intensifies  the  difficulty  of  the  classificationtask.  Furthermore,  we  enhanced  the  performance  of  the  recentGenerative Adversarial Network (GAN), StyleGAN2-ADA modelto generate more realistic images while preventing overfitting tothe  training  set.  We  did  this  by  training  a  customized  versionof  MobileNetV2  to  predict  animal  facial  landmarks;  then,  wecropped  images  accordingly.  Lastly,  we  combined  the  syntheticimages  with  the  original  dataset  and  compared  our  proposedmethod with standard GANs augmentation and no augmentationwith  different  subsets  of  training  data.  We  validated  our  workby  evaluating  the  accuracy  of  fine-grained  image  classificationon the recent Vision Transformer (ViT) Model._
 
@@ -39,20 +39,20 @@ and without landmark normalization:
 ### StyleGAN2-ADA trained on cropped pets dataset 
 
 
-| Subset | Kimg | FID  | Acc on Vit | Pre-trained Model |
-|--------|------|------|------------|-------------------|
-| 10%    | 5120 | 49.4 | 68.55      | [266.7 Mb](https://drive.google.com/file/d/1LnzWRR-WOP61yrAA-Pjx8zHZuW-_XTvv/view?usp=sharing)          |    
-| 50%    | 5120 | 22.3 | 91.73      | [266.7 Mb](https://drive.google.com/file/d/1HE1PKRbLt4D92YVX_wMgAVFDaW5ekf2i/view?usp=sharing)          |           
-| 100%   | 5120 | 14.1 | 96.28      | [266.6 Mb](https://drive.google.com/file/d/16rMCYKYOEnlUU0y_5A0vSvfp5SbEnym-/view?usp=sharing)          |           
+| Subset | Kimg | FID  | Acc on Vit | Pre-trained Networks|
+|--------|------|------|------------|---------------------|
+| 10%    | 5120 | 49.4 | 68.55      | [subset_10_cropped.pkl](https://drive.google.com/file/d/1LnzWRR-WOP61yrAA-Pjx8zHZuW-_XTvv/view?usp=sharing)|    
+| 50%    | 5120 | 22.3 | 91.73      | [subset_50_cropped.pkl](https://drive.google.com/file/d/1HE1PKRbLt4D92YVX_wMgAVFDaW5ekf2i/view?usp=sharing)|           
+| 100%   | 5120 | 14.1 | 96.28      | [subset_100_cropped.pkl](https://drive.google.com/file/d/16rMCYKYOEnlUU0y_5A0vSvfp5SbEnym-/view?usp=sharing)|           
 
 
 ### StyleGAN2-ADA trained on not cropped pets dataset 
 
-| Subset | Kimg | FID  | Acc on Vit | Pre-trained Model| 
-|--------|------|------|------------|------------------|
-| 10%    | 5120 | 71.1 | 63.32      | [266.7 Mb](https://drive.google.com/file/d/17UtNRouNT7OEXZqhAReWzxF94muO5Q5z/view?usp=sharing)         |           
-| 50%    | 5120 | 36.4 | 88.70      | [266.7 Mb](https://drive.google.com/file/d/1VxXw66_37Q8WM93bORkvTzMY_cNmR1Na/view?usp=sharing)         |           
-| 100%   | 5120 | 20.7 | 94.93      | [266.7 Mb](https://drive.google.com/file/d/1faWOraVyYiYalN7Y0lGJ7mOJx2eE3zZu/view?usp=sharing)         |           
+| Subset | Kimg | FID  | Acc on Vit | Pre-trained Networks| 
+|--------|------|------|------------|---------------------|
+| 10%    | 5120 | 71.1 | 63.32      | [subset_10_original.pkl](https://drive.google.com/file/d/17UtNRouNT7OEXZqhAReWzxF94muO5Q5z/view?usp=sharing)|           
+| 50%    | 5120 | 36.4 | 88.70      | [subset_50_original.pkl](https://drive.google.com/file/d/1VxXw66_37Q8WM93bORkvTzMY_cNmR1Na/view?usp=sharing)|           
+| 100%   | 5120 | 20.7 | 94.93      | [subset_100_original.pkl](https://drive.google.com/file/d/1faWOraVyYiYalN7Y0lGJ7mOJx2eE3zZu/view?usp=sharing)|           
 
 # Getting started
 ## Dataset
