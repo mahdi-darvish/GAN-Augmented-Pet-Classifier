@@ -11,14 +11,8 @@ Abstract: _Fine-grained   classification   remains   a   challengingtask  becaus
 # Results
 
 The measured accuracy of the used model and FID for three different dataset conditions (Original, augmented, and augmented-cropped) in data regimes of 10, 50, and 100 percent:
-
-<div style="text-align:center"><img src="Figures/FID.PNG" /></div>
 <br>
 <br>
-Comparison between synthetic and authentic images. This figure show (a) the original data,(b) and (c) generated images on
-the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50%, (e) uncropped images generated on 50%
-subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
-visualizations prove the effectiveness and the interpretability of the method.<br>
 
 <table class="tg">
 <thead>
@@ -69,6 +63,15 @@ visualizations prove the effectiveness and the interpretability of the method.<b
 </table>
 <br>
 <br>
+Comparison between synthetic and authentic images. This figure show (a) the original data,(b) and (c) generated images on
+the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50%, (e) uncropped images generated on 50%
+subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
+visualizations prove the effectiveness and the interpretability of the method.<br>
+
+<div style="text-align:center"><img src="Figures/result's pic.PNG" /></div>
+
+<br>
+<br>
 The charts explain the accuracy of the used model and FID for three different dataset conditions (Original, augmented, and cropped-augmented ) in data regimes of 10, 50, and 100 percent:
 
 <div style="text-align:center"><img src="Figures/charts.PNG" /></div>
@@ -76,6 +79,8 @@ The charts explain the accuracy of the used model and FID for three different da
 <br>
 The evaluated RMSE of the trained MobileNetV2 model with
 and without landmark normalization:
+<br>
+<br>
 
 <table class="tg">
 <colgroup>
