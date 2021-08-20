@@ -20,16 +20,7 @@ the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50
 subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
 visualizations prove the effectiveness and the interpretability of the method.<br>
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg ">
+<table class="tg">
 <thead>
   <tr>
     <th class="tg-0pky" rowspan="2">Dataset Variant<br></th>
@@ -86,8 +77,35 @@ The charts explain the accuracy of the used model and FID for three different da
 The evaluated RMSE of the trained MobileNetV2 model with
 and without landmark normalization:
 
-<div style="text-align:center"><img src="Figures/RMSE.PNG" /></div>
-
+<table class="tg">
+<colgroup>
+<col style="width: 192px">
+<col style="width: 177px">
+<col style="width: 236px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0lax" rowspan="2">Models</th>
+    <th class="tg-baqh" colspan="2">RMSE</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">Validation</th>
+    <th class="tg-baqh">Test</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">MobileNetV2</td>
+    <td class="tg-baqh">3.11</td>
+    <td class="tg-baqh">3.56</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">MobileNetV2 + Normalization</td>
+    <td class="tg-baqh">3.02</td>
+    <td class="tg-baqh">3.43</td>
+  </tr>
+</tbody>
+</table>
 # Pre-Trained Models
 
 
