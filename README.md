@@ -133,7 +133,7 @@ To generate synthetic images run the code below with your custom .pkl file and s
  We provided notebooks for running the GANs model directly through google colab:
  
  - [Original Oxford-IIIT Pets](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/blob/main/Colab%20Notebooks/colab_not-cropped.ipynb)
- - [Cropped Oxford-IIIT Pets](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/blob/main/Colab%20Notebooks/colab_cropped.ipynb)
+ - [Cropped Oxford-IIIT Pets](https://drive.google.com/file/d/1guBrFJUW1D8FSkNAKfyxsuCYtmGSgny-/view?usp=sharing)
  
 ## Landmark Detection
 ### Requirements
