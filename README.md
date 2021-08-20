@@ -20,7 +20,62 @@ the whole dataset, cropped and uncropped, respectively. (d) cropped images on 50
 subset and finally (f) and (g), cropped and uncropped images result of training on only 10% of the data. These qualitative
 visualizations prove the effectiveness and the interpretability of the method.<br>
 
-<div style="text-align:center"><img src="Figures/result's pic.PNG" /></div>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg ">
+<thead>
+  <tr>
+    <th class="tg-0pky" rowspan="2">Dataset Variant<br></th>
+    <th class="tg-c3ow" colspan="2">10% training data</th>
+    <th class="tg-c3ow" colspan="2">50% training data</th>
+    <th class="tg-c3ow" colspan="2">100% training data</th>
+  </tr>
+  <tr>
+    <th class="tg-c3ow">FID</th>
+    <th class="tg-c3ow">Accuracy</th>
+    <th class="tg-c3ow">FID</th>
+    <th class="tg-c3ow">Accuracy</th>
+    <th class="tg-c3ow">FID</th>
+    <th class="tg-c3ow">Accuracy</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Original</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">64.73</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">88.41</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">94.13</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Augmented</td>
+    <td class="tg-c3ow">71.1</td>
+    <td class="tg-c3ow">63.32</td>
+    <td class="tg-c3ow">36.4</td>
+    <td class="tg-c3ow">88.70</td>
+    <td class="tg-c3ow">20.7</td>
+    <td class="tg-c3ow">94.93</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Cropped-Augmented (Ours)</td>
+    <td class="tg-c3ow">49.4</td>
+    <td class="tg-c3ow">68.55</td>
+    <td class="tg-c3ow">22.3</td>
+    <td class="tg-c3ow">91.73</td>
+    <td class="tg-c3ow">14.1</td>
+    <td class="tg-c3ow">96.28</td>
+  </tr>
+</tbody>
+</table>
 <br>
 <br>
 The charts explain the accuracy of the used model and FID for three different dataset conditions (Original, augmented, and cropped-augmented ) in data regimes of 10, 50, and 100 percent:
