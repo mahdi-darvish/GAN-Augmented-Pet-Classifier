@@ -62,7 +62,7 @@ The official dataset can be reached from:
 <br>
 
 - [Original dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/)
-- [Cropped Version](https://drive.google.com/drive/u/7/my-drive)
+- [Cropped Version](https://drive.google.com/file/d/1guBrFJUW1D8FSkNAKfyxsuCYtmGSgny-/view?usp=sharing)
 
 #### Landmark prediction datasets:
 
