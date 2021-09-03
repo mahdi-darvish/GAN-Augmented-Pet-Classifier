@@ -1,8 +1,18 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-fine-grained-image-classification/fine-grained-image-classification-on-oxford-1)](https://paperswithcode.com/sota/fine-grained-image-classification-on-oxford-1?p=towards-fine-grained-image-classification)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/graphs/traffic)
+[![Generic badge](https://img.shields.io/badge/python-3.7.1-lime.svg)](https://www.python.org/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/blob/main/LICENSE)
+[![GitHub commits](https://badgen.net/github/commits/Naereen/Strapdown.js)](https://github.com/mahdi-darvish/GAN-Augmented-Pet-Classifier/commits)
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+
+
+
 # GANs Augmented Pet Classifier
 <div style="text-align:center"><img src="Figures/training_sequence.gif" /></div>
 
 > ### Towards Fine-grained Image Classification with Generative Adversarial Networks and Facial Landmark Detection
-> _Mahdi Darvish, Mahsa Pouramini, Hamid Bahador_
+> _Mahdi Darvish • Mahsa Pouramini • Hamid Bahador_
 
 
 > https://arxiv.org/abs/2109.00891
